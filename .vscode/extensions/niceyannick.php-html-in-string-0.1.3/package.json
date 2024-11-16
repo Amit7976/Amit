@@ -1,0 +1,51 @@
+{
+	"name": "php-html-in-string",
+	"displayName": "PHP html in string",
+	"description": "Add support for syntax highlighting in PHP strings",
+	"author": {
+		"name": "yannick1691",
+		"url": "https://github.com/yannick1691"
+	},
+	"publisher": "NiceYannick",
+	"repository": {
+		"url": "https://github.com/yannick1691/php-html-in-string.git",
+		"type": "git"
+	},
+	"homepage": "https://github.com/yannick1691/php-html-in-string/blob/main/README.md",
+	"version": "0.1.3",
+	"license": "AGPL-3.0-or-later",
+	"engines": {
+		"vscode": "^1.53.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"grammars": [
+			{
+				"injectTo": [
+					"source.php",
+					"text.html"
+				],
+				"scopeName": "php-html-in-string.injection",
+				"path": "./syntaxes/php.tmLanguage.json",
+				"embeddedLanguages": {
+					"meta.embedded.block.html": "html"
+				}
+			}
+		]
+	},
+	"__metadata": {
+		"id": "31e1ce7b-e552-42a5-a577-de97124ae78b",
+		"publisherId": "cfceed0b-def0-45f5-9826-d66b4474acdf",
+		"publisherDisplayName": "NiceYannick",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1724359813193,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery"
+	}
+}
