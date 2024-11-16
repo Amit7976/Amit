@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+		<Metadata>
+			<Identity Language="en-US" Id="codium" Version="0.12.2" Publisher="Codium" />
+			<DisplayName>Qodo Gen: AI Coding Assistant (Codium VS Code) - Code, Test and Review with Confidence, supporting Python, Javascript, Typescript, Java, PHP, Go, and more</DisplayName>
+			<Description xml:space="preserve">Qodo Gen (formerly Codiumate) is a quality-first generative AI coding platform that offers busy developers a comprehensive AI code assistant for generating code, writing unit tests, and creating documentation. With Qodo Gen, developers can leverage the power of AI directly within their IDE and Git.</Description>
+			<Tags>ai,AI code snippets,AI copilot,AI-assisted code completion,AI-powered code completion,autocomplete,bash,c,c#,c++,chat,code completion,code hinting,code prediction,code suggestion,content assist,cpp,csharp,css,documentation,documentation generation,go golang,haskell,html,intellicode,intellisense,java,javascript,julia,jupyter,keybindings,kite,kotlin,lua,method completion,node,node.js,nodejs,objectivec,objective-c,ocaml,perl,php,python,react,refactor,ruby,rust,snippets,swift,typescript,unit test generation,code-coverage,code-integrity,codium,codiumai,codiumate,coding ai,coding assistant,git</Tags>
+			<Categories>Programming Languages,Snippets,Machine Learning,Testing,AI,Chat,Education,Other</Categories>
+			<GalleryFlags>Public</GalleryFlags>
+			
+			<Properties>
+				<Property Id="Microsoft.VisualStudio.Code.Engine" Value="^1.72.0" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionDependencies" Value="vscode.git" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionPack" Value="" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionKind" Value="workspace" />
+				<Property Id="Microsoft.VisualStudio.Code.LocalizedLanguages" Value="" />
+				
+				
+				<Property Id="Microsoft.VisualStudio.Services.Links.Source" Value="https://github.com/Codium-ai/codiumai-vscode-release.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Getstarted" Value="https://github.com/Codium-ai/codiumai-vscode-release.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.GitHub" Value="https://github.com/Codium-ai/codiumai-vscode-release.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Support" Value="https://github.com/Codium-ai/codiumai-vscode-release/issues" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Learn" Value="https://www.qodo.ai/" />
+				<Property Id="Microsoft.VisualStudio.Services.Branding.Color" Value="#684BFE" />
+				<Property Id="Microsoft.VisualStudio.Services.Branding.Theme" Value="dark" />
+				<Property Id="Microsoft.VisualStudio.Services.GitHubFlavoredMarkdown" Value="true" />
+				<Property Id="Microsoft.VisualStudio.Services.Content.Pricing" Value="Free"/>
+
+				
+				
+			</Properties>
+			<License>extension/LICENSE.md</License>
+			<Icon>extension/media/logo/qodo-icon.png</Icon>
+		</Metadata>
+		<Installation>
+			<InstallationTarget Id="Microsoft.VisualStudio.Code"/>
+		</Installation>
+		<Dependencies/>
+		<Assets>
+			<Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
+			<Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/README.md" Addressable="true" />
+<Asset Type="Microsoft.VisualStudio.Services.Content.Changelog" Path="extension/CHANGELOG.md" Addressable="true" />
+<Asset Type="Microsoft.VisualStudio.Services.Content.License" Path="extension/LICENSE.md" Addressable="true" />
+<Asset Type="Microsoft.VisualStudio.Services.Icons.Default" Path="extension/media/logo/qodo-icon.png" Addressable="true" />
+		</Assets>
+	</PackageManifest>

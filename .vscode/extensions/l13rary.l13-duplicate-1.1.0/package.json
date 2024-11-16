@@ -1,0 +1,145 @@
+{
+	"name": "l13-duplicate",
+	"displayName": "Duplicate",
+	"description": "Duplicate multiple selections and/or lines",
+	"version": "1.1.0",
+	"publisher": "L13RARY",
+	"license": "SEE LICENCE IN LICENCE.md",
+	"homepage": "https://github.com/l13/vscode-duplicate/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/l13/vscode-duplicate.git"
+	},
+	"bugs": {
+		"url": "https://github.com/l13/vscode-duplicate/issues"
+	},
+	"icon": "images/icon.png",
+	"galleryBanner": {
+		"color": "#232323",
+		"theme": "dark"
+	},
+	"engines": {
+		"vscode": "^1.56.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"duplicate",
+		"line",
+		"selection"
+	],
+	"activationEvents": [
+		"onCommand:l13Duplicate.after",
+		"onCommand:l13Duplicate.before",
+		"onCommand:l13Duplicate.action.duplicate.after",
+		"onCommand:l13Duplicate.action.duplicate.before"
+	],
+	"extensionKind": [
+		"ui",
+		"workspace"
+	],
+	"capabilities": {
+		"virtualWorkspaces": true,
+		"untrustedWorkspaces": {
+			"supported": true
+		}
+	},
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "l13Duplicate.after",
+				"title": "Duplicate After Selection (Deprecated)"
+			},
+			{
+				"command": "l13Duplicate.before",
+				"title": "Duplicate Before Selection (Deprecated)"
+			},
+			{
+				"command": "l13Duplicate.action.duplicate.after",
+				"title": "Duplicate After Selection"
+			},
+			{
+				"command": "l13Duplicate.action.duplicate.before",
+				"title": "Duplicate Before Selection"
+			}
+		],
+		"keybindings": [
+			{
+				"mac": "ctrl+shift+d",
+				"key": "ctrl+alt+shift+d",
+				"command": "l13Duplicate.action.duplicate.after",
+				"when": "editorTextFocus && !editorReadonly"
+			},
+			{
+				"mac": "ctrl+d",
+				"key": "ctrl+shift+d",
+				"command": "l13Duplicate.action.duplicate.before",
+				"when": "editorTextFocus && !editorReadonly"
+			}
+		],
+		"menus": {
+			"commandPalette": [
+				{
+					"command": "l13Duplicate.after",
+					"when": "false"
+				},
+				{
+					"command": "l13Duplicate.before",
+					"when": "false"
+				},
+				{
+					"command": "l13Duplicate.action.duplicate.after",
+					"when": "!editorReadonly"
+				},
+				{
+					"command": "l13Duplicate.action.duplicate.before",
+					"when": "!editorReadonly"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "gulp build",
+		"watch": "gulp watch",
+		"test": "mocha",
+		"update": "rm -rf node_modules && rm package-lock.json && npm install",
+		"check-lint-rules": "node ./plugins/check-lint-rules"
+	},
+	"devDependencies": {
+		"@rollup/plugin-typescript": "^8.2.1",
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^8.2.2",
+		"@types/node": "^12.20.12",
+		"@types/vscode": "^1.56.0",
+		"@typescript-eslint/eslint-plugin": "^4.22.1",
+		"@typescript-eslint/eslint-plugin-tslint": "^4.22.1",
+		"@typescript-eslint/parser": "^4.22.1",
+		"del": "^6.0.0",
+		"eslint": "^7.26.0",
+		"eslint-plugin-import": "^2.22.1",
+		"eslint-plugin-jsdoc": "^33.3.0",
+		"eslint-plugin-l13": "file:plugins/eslint-plugin-l13",
+		"glob": "^7.1.7",
+		"gulp": "^4.0.2",
+		"mocha": "^8.4.0",
+		"rollup": "^2.47.0",
+		"typescript": "^4.2.4",
+		"vscode-test": "^1.0.2"
+	},
+	"__metadata": {
+		"id": "009a9709-5fd5-43e6-8168-110f6aa1e497",
+		"publisherId": "fecb6e16-56b0-44c4-a66f-f8dbebaa1cf8",
+		"publisherDisplayName": "L13RARY",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1724359813181,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery"
+	}
+}

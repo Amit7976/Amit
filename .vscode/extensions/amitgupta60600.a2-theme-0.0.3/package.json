@@ -1,0 +1,42 @@
+{
+	"name": "a2-theme",
+	"displayName": "A.2 Theme",
+	"description": "Experience coding like never before with an innovative method and a clean, distraction-free theme.",
+	"version": "0.0.3",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Amit7976/A.2-Theme"
+	},
+	"engines": {
+		"vscode": "^1.92.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"pricing": "Free",
+	"publisher": "AmitGupta60600",
+	"icon": "icon.png",
+	"contributes": {
+		"themes": [
+			{
+				"label": "A.2 Theme",
+				"uiTheme": "vs-dark",
+				"path": "./themes/a2-color-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "c680c536-a892-452e-b306-463c9a984fce",
+		"publisherId": "5cb96f19-15a6-4779-a0e4-ddb90ccfb711",
+		"publisherDisplayName": "Amit.Gupta",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1724359812028,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery"
+	}
+}
